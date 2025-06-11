@@ -225,6 +225,7 @@ func (r *Retriever) Run(ctx context.Context) error {
 					"context cancelled, exiting cluster info trigger loop",
 					"err", ctx.Err(),
 				)
+                               ticker.Stop()
 				return
 			case <-ticker.C:
 				r.logger.Debug("triggering periodic update")
