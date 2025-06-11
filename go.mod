@@ -1,8 +1,6 @@
-module github.com/prometheus-community/elasticsearch_exporter
+module github.com/eoidc2024/elasticsearch_exporter
 
-go 1.23.0
-
-toolchain go1.24.1
+go 1.21.0
 
 require (
 	github.com/alecthomas/kingpin/v2 v2.4.0
